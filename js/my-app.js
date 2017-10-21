@@ -7,7 +7,6 @@ var myApp = new Framework7({
 
 // Expose Internal DOM library
 var $$ = Dom7;
-
 $('select').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -51,7 +50,6 @@ $('select').each(function(){
         $styledSelect.removeClass('active');
         $list.hide();
     });
-alert('el diablazo!');
 });
 
 // Add main view
@@ -1169,6 +1167,3 @@ myApp.onPageInit('animation', function (page) {
             );
     });
 });
-/*
-Reference: http://jsfiddle.net/BB3JK/47/
-*/

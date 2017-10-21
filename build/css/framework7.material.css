@@ -1,17 +1,17 @@
 /**
  * Framework7 1.6.5
  * Full featured mobile HTML framework for building iOS & Android apps
- * 
+ *
  * Google Material Theme
  *
  * http://framework7.io/
- * 
+ *
  * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
- * 
+ *
  * Licensed under MIT
- * 
+ *
  * Released on: September 7, 2017
  */
 html,
@@ -1059,7 +1059,7 @@ p {
 .navbar,
 .toolbar,
 .subnavbar {
-  background: #2196f3;
+  background: #bd5812;
 }
 .navbar a.link,
 .toolbar a.link,
@@ -1142,17 +1142,19 @@ html:not(.watch-active-state) .subnavbar a.link:active:before,
 }
 .navbar .center,
 .subnavbar .center {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
-  margin: 0 16px;
+  text-transform: uppercase;
+  margin: 0 0 0 24px;
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 56px;
   display: inline-block;
-  text-align: left;
+  text-align: center;
+  width: 100%;
 }
 .navbar .left,
 .subnavbar .left,
@@ -1190,12 +1192,12 @@ html:not(.watch-active-state) .subnavbar a.link:active:before,
 .navbar {
   left: 0;
   top: 0;
-  height: 56px;
+  height: 40px;
   font-size: 20px;
 }
 .navbar a.link {
   line-height: 56px;
-  height: 56px;
+  height: 35px;
 }
 .popup .navbar {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1499,7 +1501,7 @@ html:not(.watch-active-state) .tabbar a.tab-link:active,
 .navbar-through.pages .page-content,
 .navbar-fixed.view .page-content,
 .navbar-through.view .page-content {
-  padding-top: 56px;
+  padding-top: 110px;
 }
 .navbar-fixed.toolbar-fixed .page-content,
 .navbar-through.toolbar-fixed .page-content,
@@ -1593,7 +1595,9 @@ html:not(.watch-active-state) .tabbar a.tab-link:active,
 .navbar-through .page .subnavbar,
 .navbar-fixed.page .subnavbar,
 .navbar-through.page .subnavbar {
-  top: 56px;
+  background: none;
+  box-shadow: none;
+  height: 90px;
 }
 .navbar-fixed .toolbar,
 .navbar-through .toolbar {
@@ -1729,7 +1733,7 @@ html:not(.watch-active-state) .tabbar a.tab-link:active,
 }
 .navbar-fixed .navbar,
 .navbar-through .navbar {
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  /*box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);*/
 }
 .navbar-fixed .navbar.navbar-hidden,
 .navbar-through .navbar.navbar-hidden {
