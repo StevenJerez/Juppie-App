@@ -6,7 +6,9 @@
 .login-screen-content .item-input input {
   color: #fff;
 }
-
+.login-screen-title img {
+  max-width: 200px;
+}
 .login-btn {
   border: 2px solid #fff;
   border-radius: 12px !important;
