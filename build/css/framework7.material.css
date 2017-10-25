@@ -1224,7 +1224,7 @@ html:not(.watch-active-state) .subnavbar a.link:active:before,
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  overflow: hidden;
+  /*overflow: hidden;*/ /* REVIEW: para el dropdown */
 }
 .subnavbar a.link {
   line-height: 48px;
@@ -3954,7 +3954,7 @@ html.android-4 .accordion-item-content {
 }
 .card {
   background: #fff;
-  margin: 8px;
+  margin: 16px 8px 0;
   position: relative;
   border-radius: 2px;
   font-size: 14px;

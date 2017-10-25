@@ -108,8 +108,7 @@
   background-color: #f6f6f6;
 }
 .select-styled:active:after, .select-styled.active:after {
-  top: 9px;
-  border-color: transparent transparent #fff transparent;
+  transform: rotate(-135deg);
 }
 
 .select-options {
@@ -122,20 +121,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #ab3326;
+  background-color: #ee7421;
 }
 .select-options li {
   margin: 0;
   padding: 12px 0;
   text-indent: 15px;
-  border-top: 1px solid #962d22;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
+  color: #fff;
 }
 .select-options li:hover {
-  color: #c0392b;
+  color: #ee7421;
   background: #fff;
 }
 .select-options li[rel="hide"] {
@@ -162,26 +162,111 @@
 .item-media img{
   border-radius: 50%;
 }
+.item-button {
+  display: flex;
+}
 .color {
- color: #ee7421;
+  color: #ee7421;
 }
 .item-subtitle.light {
-    color: lightgray;
+  color: lightgray;
 }
 .menu-left {
   background: #0a1c28;
 }
 .juppie-button {
-    padding: 12px 16px;
-    background: transparent;
-    border: 2px solid #ee7421;
-    border-radius: 50px;
-    margin: 12px auto 0;
-    display: block;
-    text-transform: uppercase;
-    color: #ee7421;
-    font-weight: 500;
-    font-family: inherit;
+  padding: 12px 16px;
+  background: transparent;
+  border: 2px solid #ee7421;
+  border-radius: 50px;
+  margin: 12px auto 0;
+  display: block;
+  text-transform: uppercase;
+  color: #ee7421;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 0.9em
+}
+.juppie-button-inv {
+  padding: 12px 16px;
+  background: #ee7421;
+  border-radius: 50px;
+  margin: 16px auto 0;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+}
+.profile-pic img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.profile-name {
+  color: #ee7421;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 22px;
+}
+ul.menu-content {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 48px;
+}
+
+.menu-content li {
+  padding:8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  margin-top: 16px;
+}
+.menu-content li > i {
+  vertical-align: sub;
+  color: #ee7421;
+  margin-right: 8px;
+}
+.toolbar-side {
+  background: none;
+  box-shadow: none;
+}
+.toolbar-side a > i {
+  margin-right: 8px;
+  color: #ee7421;
+}
+.hero-img {
+  background-image: url('../assets/img/me-parallax.jpg');
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  max-height: 400px;
+}
+.card-content-cat {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+}
+.card-content-cat img {
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px
+}
+.card-subtitle {
+  font-size: 14px;
+  color: #757575;
 }
 @media screen and (max-width: 321px) {
   .select {
