@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#2196f3">
+  <title>Framework7 Material</title>
+  <link rel="stylesheet" href="build/css/framework7.material.css">
+  <link rel="stylesheet" href="build/css/framework7.material.colors.css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="css/my-app.css">
+  <link rel="icon" href="img/icon.png">
+</head>
+<body>
+  <div class="statusbar-overlay"></div>
+  <div class="panel-overlay"></div>
+  <div class="panel panel-left panel-cover">
+    <div class="view">
+      <div class="pages">
+        <div data-page="vacantes" class="page menu-left">
+          <div class="page-content">
+            <div class="content-block">
+              <div class="profile-pic">
+                <img src="assets/img/kriss.jpg" alt="">
+                <div class="profile-name" id="profileName">Kriss Suarez</div>
+              </div>
+              <ul class="menu-content">
+                <a href="vacantes.html" class="external"><li><i class="material-icons">work</i>Vacantes</li></a>
+                <a href="estado.html" class="external"><li><i class="material-icons">free_breakfast</i> Estado</li></a>
+                <li><i class="material-icons">help</i> Soporte</li>
+              </ul>
+            </div>
+          </div>
+          <div class="toolbar toolbar-bottom toolbar-side">
+            <div class="toolbar-inner"><a href="profile.html" class="link external"><i class="icon material-icons">create</i> Editar Perfil</a> <a href="index.html" class="link external"><i class="icon material-icons">close</i> Cerrar Sesión</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages navbar-fixed">
+        <div data-page="index" class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left"><a href="vacantes.html" class="back link icon-only external"><i class="icon material-icons">chevron_left</i></a></div>
+              <div class="center">estado</div>
+              <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+            </div>
+            <div class="subnavbar">
+              <div class="select-menu">
+                <div class="buttons-row juppie-tabs-inv">
+                  <!-- Link to 1st tab, active -->
+                  <a href="#tab1" class="tab-link active button">Vacantes</a>
+                  <!-- Link to 2nd tab -->
+                  <a href="#tab2" class="tab-link button">Historial</a>
+                </div>
+              </div>
+              <img class="sub-img" src="assets/img/overlay.png" alt="">
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-block">
+
+            </div>
+            <!-- Tabs, tabs wrapper -->
+            <div class="tabs">
+              <!-- Tab 1, active by default -->
+              <div id="tab1" class="tab active">
+                <div class="content-block">
+                  <div class="list-block media-list">
+                    <ul>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-media"><img src="assets/img/cat.png" width="35"></div>
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <b class="item-title">Solicitamos Entrenador de Pesas</b>
+                            </div>
+                            <div class="item-text"><span class="color">Visto por 6 empresas</span></div>
+                            <div class="item-text"><span class="status approved"><i class="icon material-icons">thumb_up</i> Aprobado</span></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-media"><img src="assets/img/cat.png" width="35"></div>
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <b class="item-title">Estamos Solicitanto Montacarguistas</b>
+                            </div>
+                            <div class="item-text"><span class="color">Visto por 6 empresas</span></div>
+                            <div class="item-text"><span class="status pending"><i class="icon material-icons">access_times</i> Pendiente</span></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-media"><img src="assets/img/cat.png" width="35"></div>
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <b class="item-title">Chef Cocinero Tiempo completo</b>
+                            </div>
+                            <div class="item-text"><span class="color">Visto por 6 empresas</span></div>
+                            <div class="item-text"><span class="status disapproved"><i class="icon material-icons">thumb_down</i> No aplicó</span></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Tab 2 -->
+              <div id="tab2" class="tab">
+                <div class="content-block">
+                  <div class="list-block media-list">
+                    <ul>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-media"><img src="assets/img/cat.png" width="45"></div>
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <b class="item-title">Profesor de educación Física</b>
+                            </div>
+                            <div class="item-text"><span class="">Hace 5 meses</span></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="build/js/framework7.js"></script>
+  <script src="build/js/jquery.js"></script>
+  <script type="text/javascript" src="js/dropdown.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

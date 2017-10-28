@@ -1,67 +1,114 @@
-<!-- We don't need full layout in this file because this page will be parsed with Ajax. It is just enough to put here .navbar and .page-->
-
-<!-- Top Navbar-->
-<div data-page="about" class="page">
-  <div class="navbar">
-    <div class="navbar-inner">
-      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon material-icons">chevron_left</i></a></div>
-      <div class="center">vacantes</div>
-      <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
-    </div>
-  </div>
-  <div class="page-content">
-    <div class="hero-img"></div>
-    <div class="content-block">
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content-cat"><img src="assets/img/cat.png" alt=""></div>
-          <div class="card-content-inner">
-            <div class="card-title">Solicitamos Entrenador de Pesas</div>
-            <div class="card-subtitle">Cavaz Consulting, La Romana</div>
-            <div class="card-subtitle">Hace 3 días</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<!-- We8 don't need full layout in this file because this page will be parsed with Ajax. It is just enough to put here .navbar and .page-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#2196f3">
+  <title>Framework7 Material</title>
+  <link rel="stylesheet" href="build/css/framework7.material.css">
+  <link rel="stylesheet" href="build/css/framework7.material.colors.css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="css/my-app.css">
+  <link rel="icon" href="img/icon.png">
+</head>
+<body>
+  <div class="statusbar-overlay"></div>
+  <div class="panel-overlay"></div>
+  <div class="panel panel-left panel-cover">
+    <div class="view">
+      <div class="pages">
+        <div data-page="vacantes" class="page menu-left">
+          <div class="page-content">
+            <div class="content-block">
+              <div class="profile-pic">
+                <img src="assets/img/kriss.jpg" alt="">
+                <div class="profile-name" id="profileName">Kriss Suarez</div>
+              </div>
+              <ul class="menu-content">
+                <a href="vacantes.html" class="external"><li><i class="material-icons">work</i>Vacantes</li></a>
+                <a href="estado.html" class="external"><li><i class="material-icons">free_breakfast</i> Estado</li></a>
+                <li><i class="material-icons">help</i> Soporte</li>
+              </ul>
+            </div>
+          </div>
+          <div class="toolbar toolbar-bottom toolbar-side">
+            <div class="toolbar-inner"><a href="profile.html" class="link external"><i class="icon material-icons">create</i> Editar Perfil</a> <a href="index.html" class="link external"><i class="icon material-icons">close</i> Cerrar Sesión</a></div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content-inner">
-            <div class="card-title">Resumen</div>
-            <div class="row">
-              <div class="col-50 tablet-33"><p><span>Disponibilidad</span><br><b id="disponibilidad">Tiempo Completo</b></p></div>
-              <div class="col-50 tablet-33"><p><span>Lugar</span><br><b id="lugar">La Romana</b></p></div>
-              <div class="col-50 tablet-33"><p><span>Salario</span><br><b id="salario">RD$ 80,000.00</b></p></div>
-              <div class="col-50 tablet-33"><p><span>Horario</span><br><b id="horario">8:00am - 5:00pm</b></p></div>
-              <div class="col-50 tablet-66"><p><span>Categoría</span><br><b id="categoria">Tecnología</b></p></div>
+    </div>
+  </div>
+  <!-- Top Navbar-->
+  <div data-page="about" class="page">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left"><a href="vacantes.html" class="back link icon-only external"><i class="icon material-icons">chevron_left</i></a></div>
+        <div class="center">vacantes</div>
+        <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+      </div>
+    </div>
+    <div class="page-content about">
+      <div class="hero-img"></div>
+      <div class="content-block">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-content-cat"><img src="assets/img/cat.png" alt=""></div>
+            <div class="card-content-inner">
+              <div class="card-title">Solicitamos Entrenador de Pesas</div>
+              <div class="card-subtitle">Cavaz Consulting, La Romana</div>
+              <div class="card-subtitle">Hace 3 días</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content-inner">
-            <div class="card-title">Requerimientos</div>
-            <ol>
-              <li>Conocimiento del area</li>
-              <li>Buen lexico</li>
-              <li>Paciencia</li>
-            </ol>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-content-inner">
+              <div class="card-title">Resumen</div>
+              <div class="row">
+                <div class="col-50 tablet-33"><p><span>Disponibilidad</span><br><b id="disponibilidad">Tiempo Completo</b></p></div>
+                <div class="col-50 tablet-33"><p><span>Lugar</span><br><b id="lugar">La Romana</b></p></div>
+                <div class="col-50 tablet-33"><p><span>Salario</span><br><b id="salario">RD$ 80,000.00</b></p></div>
+                <div class="col-50 tablet-33"><p><span>Horario</span><br><b id="horario">8:00am - 5:00pm</b></p></div>
+                <div class="col-50 tablet-66"><p><span>Categoría</span><br><b id="categoria">Tecnología</b></p></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content-inner">
-            <div class="card-title">Beneficios</div>
-            <ol>
-              <li>Seguro</li>
-              <li>Doble Sueldo</li>
-              <li>Vacaciones Pagadas</li>
-            </ol>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-content-inner">
+              <div class="card-title">Requerimientos</div>
+              <ol>
+                <li>Conocimiento del area</li>
+                <li>Buen lexico</li>
+                <li>Paciencia</li>
+              </ol>
+            </div>
           </div>
         </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-content-inner">
+              <div class="card-title">Beneficios</div>
+              <ol>
+                <li>Seguro</li>
+                <li>Doble Sueldo</li>
+                <li>Vacaciones Pagadas</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="item-button"><a class="juppie-button-inv" href="about.html">Aplicar ahora</a></div>
       </div>
-      <div class="item-button"><a class="juppie-button-inv" href="about.html">Aplicar ahora</a></div>
     </div>
   </div>
-</div>
+  <script type="text/javascript" src="build/js/framework7.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

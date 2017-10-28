@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#2196f3">
+  <title>Profile</title>
+  <link rel="stylesheet" href="build/css/framework7.material.css">
+  <link rel="stylesheet" href="build/css/framework7.material.colors.css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="css/my-app.css">
+  <link rel="icon" href="img/icon.png">
+</head>
+<body>
+  <div class="statusbar-overlay"></div>
+  <div class="panel-overlay"></div>
+  <div class="panel panel-left panel-cover">
+    <div class="view">
+      <div class="pages">
+        <div data-page="vacantes" class="page menu-left">
+          <div class="page-content">
+            <div class="content-block">
+              <div class="profile-pic">
+                <img src="assets/img/kriss.jpg" alt="">
+                <div class="profile-name" id="profileName">Kriss Suarez</div>
+              </div>
+              <ul class="menu-content">
+                <a href="vacantes.html" class="external"><li><i class="material-icons">work</i>Vacantes</li></a>
+                <a href="estado.html" class="external"><li><i class="material-icons">free_breakfast</i> Estado</li></a>
+                <li><i class="material-icons">help</i> Soporte</li>
+              </ul>
+            </div>
+          </div>
+          <div class="toolbar toolbar-bottom toolbar-side">
+            <div class="toolbar-inner"><a href="profile.html" class="link external"><i class="icon material-icons">create</i> Editar Perfil</a> <a href="index.html" class="link external"><i class="icon material-icons">close</i> Cerrar Sesión</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages navbar-fixed">
+        <div data-page="profile" class="page profile">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left"><a href="vacantes.html" class="back link icon-only external"><i class="icon material-icons">chevron_left</i></a></div>
+              <div class="center">perfil</div>
+              <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+            </div>
+            <div class="subnavbar">
+              <div class="select-menu">
+                <div class="profile-pic">
+                  <img src="assets/img/kriss.jpg" alt="">
+                </div>
+              </div>
+              <img class="sub-img" src="assets/img/overlay.png" alt="">
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-block">
+              <div class="buttons-row juppie-tabs">
+                <!-- Link to 1st tab, active -->
+                <a href="#tab1" class="tab-link active button">Datos</a>
+                <!-- Link to 2nd tab -->
+                <a href="#tab2" class="tab-link button">Academico</a>
+                <!-- Link to 3rd tab -->
+                <a href="#tab3" class="tab-link button">Intereses</a>
+              </div>
+            </div>
+            <!-- Tabs, tabs wrapper -->
+            <div class="tabs">
+              <!-- Tab 1, active by default -->
+              <div id="tab1" class="tab active">
+                <div class="content-block">
+                  <div class="list-block">
+                    <ul class="form-special">
+                      <div class="row">
+                        <div class="col-50">
+                          <div class="item-inner">
+                            <i class="icon material-icons">face</i>
+                            <div class="item-title floating-label">Nombre</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-50">
+                          <div class="item-inner">
+                            <i class="icon material-icons">face</i>
+                            <div class="item-title floating-label">Apellido</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <div class="item-inner">
+                            <i class="icon material-icons">email</i>
+                            <div class="item-title floating-label">Correo electrónico</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <div class="item-inner">
+                            <i class="icon material-icons">today</i>
+                            <div class="item-title floating-label">Fecha de Nacimiento</div>
+                            <div class="item-input item-input-field">
+                              <input type="date" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <div class="item-inner not-empty-state">
+                            <i class="icon material-icons">flag</i>
+                            <div class="item-title label">Nacionalidad</div>
+                            <div class="item-input item-input-field">
+                              <select class=" not-empty-state" name="">
+                                <option value="">Republica Dominicana</option>
+                                <option value="">Mexico</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <div class="item-inner not-empty-state">
+                            <i class="icon material-icons">person</i>
+                            <div class="item-title label">Género</div>
+                            <div class="item-input item-input-field">
+                              <select class=" not-empty-state" name="">
+                                <option value="">M</option>
+                                <option value="">F</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <div class="item-inner">
+                            <i class="icon material-icons">person</i>
+                            <div class="item-title floating-label">Identificación</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <div class="item-inner">
+                            <i class="icon material-icons">phone_android</i>
+                            <div class="item-title floating-label">Teléfono Movil</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <div class="item-inner">
+                            <i class="icon material-icons">home</i>
+                            <div class="item-title floating-label">País Residente</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-50">
+                          <div class="item-inner">
+                            <i class="icon material-icons">home</i>
+                            <div class="item-title floating-label">Provincia</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-50">
+                          <div class="item-inner">
+                            <i class="icon material-icons">home</i>
+                            <div class="item-title floating-label">Ciudad</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="username" placeholder class>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <li class="row">
+                        <div class="col-100">
+                          <div class="md-checkbox">
+                            <input id="i4" type="checkbox">
+                            <label for="i4">Licencia de Conducir</label>
+                          </div>
+                          <div class="md-checkbox">
+                            <input id="i4" type="checkbox">
+                            <label for="i4">Vehiculo</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Tab 2 -->
+              <div id="tab2" class="tab">
+                <div class="content-block">
+                  <div class="list-block">
+                    <ul class="form-special">
+                      <li class="row">
+                        <div class="col-100">
+                          <div class="item-inner">
+                            <i class="icon material-icons">book</i>
+                            <div class="item-title label">Nivel Académico</div>
+                            <div class="item-input item-input-field">
+                              <select class="" name="">
+                                <option value="">Basica</option>
+                                <option value="">Media</option>
+                                <option value="">Univeritario</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="row">
+                        <div class="col-100">
+                          <div class="item-inner">
+                            <i class="icon material-icons">work</i>
+                            <div class="item-title floating-label">Perfil de LinkedIn</div>
+                            <div class="item-input item-input-field">
+                              <input type="text" name="" value="">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Tab 3 -->
+              <div id="tab3" class="tab">
+                <div class="content-block">
+                  <div class="list-block">
+                    <ul class="form-special">
+                      <li class="row">
+                        <div class="col-100">
+                          <div class="md-checkbox">
+                            <input id="i2" type="checkbox" checked>
+                            <label for="i2">Tecnologias</label>
+                          </div>
+                          <div class="md-checkbox">
+                            <input id="i3" type="checkbox" checked>
+                            <label for="i3">Comunicación y Relaciones Públicas</label>
+                          </div>
+                          <div class="md-checkbox">
+                            <input id="i4" type="checkbox" checked>
+                            <label for="i4">Ingenieria de la Construcción y Arquitectura</label>
+                          </div>
+                          <div class="md-checkbox">
+                            <input id="i5" type="checkbox" checked>
+                            <label for="i5">Negocios y finanzas</label>
+                          </div>
+                          <div class="md-checkbox">
+                            <input id="i6" type="checkbox" checked>
+                            <label for="i6">Mercadeo</label>
+                          </div>
+                          <div class="md-checkbox">
+                            <input id="i7" type="checkbox" checked>
+                            <label for="i7">Educación y Tutoría</label>
+                          </div>
+                          <div class="md-checkbox">
+                            <input id="i8" type="checkbox" checked>
+                            <label for="i8">Salud, Belleza y Bienestar</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="item-button"><a class="juppie-button external" href="#">Guardar Cambios</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="build/js/framework7.js"></script>
+  <script src="build/js/jquery.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

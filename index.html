@@ -6,24 +6,18 @@
   <!-- Juppie App View -->
   <title>Juppie Login</title>
   <!-- Path to Framework7 iOS CSS theme styles-->
-  <link rel="stylesheet" href="build/css/framework7.material.min.css">
+  <link rel="stylesheet" href="build/css/framework7.material.css">
   <link rel="stylesheet" href="css/my-app.css">
-  <link rel="stylesheet" href="build/css/material-icons.css">
+  <link rel="stylesheet" href="css/material-icons.css">
 
 </head>
 <body>
-  <div class="page-content view-main">
-    <div class="content-block">
-      <p><a href="#" class="open-login-screen">Abrir el login</a></p>
-    </div>
-  </div>
-  ...
-  <div class="login-screen">
+  <div class="login-screen modal-in">
     <div class="view">
       <div class="page">
         <div class="page-content login-screen-content">
           <div class="login-screen-title"><img src="assets/img/logo.png" alt=""></div>
-          <form>
+          <form class="form-field">
             <div class="list-block inputs list">
               <ul>
                 <li class="item-content">
@@ -46,10 +40,10 @@
                 </li>
               </ul>
             </div>
-            <div class="content-block"><a href="#" class="button button-big login-btn">Iniciar Sesión</a></div>
+            <div class="content-block"><a href="vacantes.html" class="button button-big login-btn external">Iniciar Sesión</a></div>
             <div class="content-block">
               <div class="list-block-label"><a href="" class="forgot">Olvidé mi contraseña</a></div>
-              <div class="list-block-label"><p class="register-link">Si aun no tienes cuenta <a href="" class="yellow">Registrate aquí</a></p></div>
+              <div class="list-block-label"><p class="register-link">Si aun no tienes cuenta <a href="register.html" class="yellow external">Registrate aquí</a></p></div>
             </div>
           </form>
         </div>
@@ -58,6 +52,7 @@
   </div>
   <!-- Path to Framework7 Library JS-->
   <script type="text/javascript" src="dev/dist/js/framework7.min.js"></script>
+  <script src="build/js/jquery.js"></script>
   <script type="text/javascript" src="dev/dist/js/my-app.js"></script>
 </body>
 </html>
